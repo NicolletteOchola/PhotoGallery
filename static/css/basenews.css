@@ -1,14 +1,16 @@
 h1
 {
   color: black;
+  font-family: 'Satisfy', cursive;
 }
 
 html, body {
   position: relative;
   min-height: 100%;
+  font-family: 'Satisfy', cursive;
 }
 
-// Within style tags in your html file
+/* // Within style tags in your html file */
 * { box-sizing: border-box; }
 
 .grid:after {

@@ -14,7 +14,8 @@ def index(request):
   location = Location.get_location()
   locations = Location.get_location()
 
-  return render(request, 'index.html', {"date": date, "images":images, "location": location, "locations": locations})
+  return render(request, 'index.html', {"date": date, "images": images, "location": location, "locations": locations})
+
 
 def search_images(request):
   locations = Location.get_location()
@@ -23,22 +24,23 @@ def search_images(request):
     searched_images = Image.search_by_categ(search_term)
     message = f"{search_term}"
 
-    return render(request, 'search.html', {"message":message,"images": searched_images, "locations": locations})
+    return render(request, 'search.html', {"message": message, "images": searched_images, "locations": locations})
 
   else:
     message = "Invalid Search"
-    return render(request, 'search.html', {"message": message, "locations":locations})
+    return render(request, 'search.html', {"message": message, "locations": locations})
 
-def get_image(request,id):
+
+def get_image(request, id):
   locations = Location.get_location()
   try:
     image = Image.objects.get(pk=id)
     print(image)
-  
+
   except ObjectDoesNotExist:
     raise Http404()
 
-  return render(request, "images.html", {"image":image, "locations":locations})
+  return render(request, "images.html", {"image": image, "locations": locations})
 
 def location(request, location):
     images = Image.search_by_location(location)
