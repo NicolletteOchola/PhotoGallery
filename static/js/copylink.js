@@ -19,3 +19,13 @@ var $grid = $('.grid').masonry({
 $grid.imagesLoaded().progress( function() {
   $grid.masonry();
 });
+
+$(function () {
+  $(window).scroll(function () {              
+      $(".backtop").show(4000)
+  })
+
+  $(".backtop").click(function(){                  
+      $(this).hide()
+  })
+})

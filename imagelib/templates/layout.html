@@ -27,6 +27,8 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
   <link rel="stylesheet" href="{% static 'css/main.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
   {% endblock %}
@@ -36,7 +38,7 @@
 <body>
   {% include "navbar.html" %}
   {% block content %}
-  <div class="jumbotron">
+  <div class="message">
     <div class="">
       <h2 class="text-center font-weight-bold text-white">A picture is worth a thousand words!</h2>
       <!-- <p class="display-4 text-center font-weight-bold text-white">A picture is worth a thousand words</p> -->
@@ -53,6 +55,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- JQuery -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="{% static 'js/jquery.js' %}"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
@@ -65,6 +68,8 @@
   <script type="text/javascript" src="{% static 'js/copylink.js' %}"></script>
   <!-- Javascript for the owl carousel -->
   <script src="{% static 'js/owl.carousel.js' %}"></script>
+  <script src="{% static 'assets/owl.carousel.js' %}"></script>
+
   <script>
     $('.owl-carousel').owlCarousel({
       loop: true,
@@ -92,7 +97,7 @@
   {% endblock %}
   <div class="pt-4 mt-4 mb-4 pb-4"></div>
   <!-- Footer -->
-  <footer class="page-footer font-small light bg-light mt-4 pt-4">
+  <footer class="page-footer font-small light bg-dark mt-4 pt-4 footer">
 
     <!-- Copyright -->
     <div class="footer-copyright text-center py-3">© 2020 Copyright.

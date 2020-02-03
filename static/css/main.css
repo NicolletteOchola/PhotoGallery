@@ -3,7 +3,7 @@ html{
 }
 
 body {
-  background-color: black;
+  background-color: #1E2019;
 }
 h1
 {
@@ -74,7 +74,7 @@ html, body {
 }
 
 .jumbotron {
-  background-color: black;
+  background-color: #1E2019;
 }
 
 .owl-carousel {
@@ -85,3 +85,10 @@ html, body {
   padding: 40px;
 }
 
+.footer {
+  background-color: #1E2019;
+}
+
+.message {
+  padding-top: 40px;
+}
