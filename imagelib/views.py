@@ -42,7 +42,7 @@ def get_image(request, id):
 
   return render(request, "images.html", {"image": image, "locations": locations})
 
-def location(request, location):
+def location(request, location ): 
     images = Image.search_by_location(location)
     locations = Location.get_location()
     message = f"{location}"
