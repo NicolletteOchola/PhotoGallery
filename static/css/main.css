@@ -72,3 +72,16 @@ html, body {
   display: block;
   max-width: 100%;
 }
+
+.jumbotron {
+  background-color: black;
+}
+
+.owl-carousel {
+  padding: 60px;
+}
+
+.imagelay {
+  padding: 40px;
+}
+
