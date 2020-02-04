@@ -80,13 +80,12 @@ WSGI_APPLICATION = 'galary.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 # development
-
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.postgresql',
-            'NAME': 'galary',
-            'USER': 'nicole',
-            'PASSWORD':'   ',
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'galary',
+        'USER': 'nicole',
+        'PASSWORD':'1997',
     }
 }
 
