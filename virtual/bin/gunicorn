@@ -1,4 +1,4 @@
-#!/mnt/c/Users/nicol/Moringa/Python/Django/The-Photo-Galary/virtual/bin/python3.6
+#!/mnt/c/Users/nicol/Moringa/Python/Django/The-Photo-Galary/virtual/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys
